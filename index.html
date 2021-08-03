@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Listly</title>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+            <center>
+                <div class="top-bar">
+                    <div id="shift">
+                        <div class="tooltip">
+                            <button onclick="togg()" class="togg"><i class="fas fa-dot-circle"></i></button>
+                            <span class="tooltiptext">Light/Dark Mode</span>
+                        </div>
+                    </div>
+                    
+                    <div id="playlist">
+                        <button onclick="pop()" class="list"><i class="fas fa-music"></i></button>
+                    </div>
+                </div>
+                <div class="main-top">
+                    <h1>Listly</h1>
+                </div>
+                <br>
+                <div class="circle">
+                    <div class="roller">
+                        <span id="roller"></span>
+                        <span id="roller"></span>
+                        <span id="roller"></span>
+                        <span id="roller"></span>
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzBjYWIzNmQtZjA2NS00ZTMzLThmODQtMGE0MTEzZGE1YTgzXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg" id="image_">
+                    </div>
+                </div>
+                <br>
+                <div class="name">
+                    <div class="song_name">
+                        Attention
+                    </div>
+                    <p class="artist">Charlie Puth</p>
+                </div>
+                <br><br>
+                <div class="control">
+                    <button class="back" id="back">
+                        <i class="fas fa-backward" id="bw_id"></i>
+                    </button>
+                    <button class="play" id="play">
+                        <i class="fas fa-play" id="pl_id"></i>
+                    </button>
+                    <button class="next" id="next">
+                        <i class="fas fa-forward" id="fw_id"></i>
+                    </button>
+                </div>
+                <br>
+
+                <div class="strtime">
+                    <div class="start_str" id="start">
+                        0:00
+                    </div>
+                    <div class="end_str" id="end">
+                        0:00
+                    </div>
+                </div>
+
+                <div class="pro" id="pro">
+                    <div class="bar" id="bar"></div>
+                </div>
+
+                <div id="popup" class="popup">
+                    <i class="fas fa-chevron-down" onclick="close_popup()"></i>
+                    <div class="list">
+                        <div class="popup-container">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="patanhi"></div>
+
+                <audio src="audio/Attention.mp3"></audio>
+            </center>
+        </div>
+    </center>
+</body>
+<script src="script.js"></script>
+
+</html>
